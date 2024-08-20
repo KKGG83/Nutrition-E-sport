@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7330c9e80c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/recettes.css">
+    <title>Recettes</title>
+</head>
+<body>
+    <header>
+        <div class="container-width-1440">
+            <a href="/"><img src="img/Logo.png" alt="Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="#">Recettes</a></li>
+                    <li><a href="#">Suivi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="section1">
+            <div class="container-width-1440">
+                
+                <!-- Formulaire pour créer une recette -->
+                <div class="create-recipe-container">
+                    <h1>Créer une recette</h1> 
+                    <form id="create-recipe-form">
+                        <label for="recipe-name">Nom de la recette:</label>
+                        <input type="text" id="recipe-name" name="recipe-name" required>
+                        
+                        <label for="recipe-ingredients">Ingrédients (séparer par des virgules):</label>
+                        <input type="text" id="recipe-ingredients" name="recipe-ingredients" required>
+                        
+                        <label for="recipe-instructions">Instructions (séparer par des virgules):</label>
+                        <input type="text" id="recipe-instructions" name="recipe-instructions" required>
+                        
+                        <button type="submit">Créer la recette</button>
+                    </form>
+                </div>
+                <!-- Barre de recherche -->
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Rechercher des recettes...">
+                    <button type="button" id="search-button">Rechercher</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="container-width-1440">
+                <div class="recipe">
+                    <h2>Recette de Gâteau au Chocolat</h2> 
+
+                    <article>
+                        <img src="img/pexels-abhinavcoca-291528.jpg" alt="Gâteau au Chocolat">
+
+                        <div class="ingredients">
+                            <h3>Ingrédients :</h3> 
+                            <ul>
+                                <li><input type="checkbox"> <span>200g de chocolat noir</span></li>
+                                <li><input type="checkbox"> <span>150g de beurre</span></li>
+                                <li><input type="checkbox"> <span>150g de sucre</span></li>
+                                <li><input type="checkbox"> <span>50g de farine</span></li>
+                                <li><input type="checkbox"> <span>3 œufs</span></li>
+                                <li><input type="checkbox"> <span>1 pincée de sel</span></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="steps">
+                            <h3>Étapes :</h3> 
+                            <ol>
+                                <li>Préchauffez le four à 180°C (thermostat 6).</li>
+                                <li>Faites fondre le chocolat et le beurre au bain-marie.</li>
+                                <li>Dans un bol, mélangez le sucre et les œufs jusqu'à ce que le mélange blanchisse.</li>
+                                <li>Ajoutez le chocolat et le beurre fondus au mélange sucre-œufs, puis incorporez la farine et la pincée de sel.</li>
+                                <li>Versez la préparation dans un moule beurré et fariné.</li>
+                                <li>Enfournez pendant 25 à 30 minutes. Vérifiez la cuisson en plantant la pointe d'un couteau dans le gâteau, elle doit ressortir légèrement humide.</li>
+                                <li>Laissez refroidir avant de démouler et de déguster.</li>
+                            </ol>
+                        </div>
+                    </article>
+                    
+                    <!-- Boutons Modifier et Supprimer -->
+                    <div class="recipe-actions">
+                        <button type="button" class="btn-edit">Modifier</button>
+                        <button type="button" class="btn-delete">Supprimer</button>
+                    </div>
+                </div>
+
+                <div class="recipe">
+                    <h2>Autre Recette</h2> 
+                    
+                    <article>
+                        <img src="img/pexels-valeriya-842571.jpg" alt="Autre Recette">
+
+                        <div class="ingredients">
+                            <h3>Ingrédients :</h3> 
+                            <ul>
+                                <li><input type="checkbox"> <span>200g de chocolat noir</span></li>
+                                <li><input type="checkbox"> <span>150g de beurre</span></li>
+                                <li><input type="checkbox"> <span>150g de sucre</span></li>
+                                <li><input type="checkbox"> <span>50g de farine</span></li>
+                                <li><input type="checkbox"> <span>3 œufs</span></li>
+                                <li><input type="checkbox"> <span>1 pincée de sel</span></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="steps">
+                            <h3>Étapes :</h3> 
+                            <ol>
+                                <li>Préchauffez le four à 180°C (thermostat 6).</li>
+                                <li>Faites fondre le chocolat et le beurre au bain-marie.</li>
+                                <li>Dans un bol, mélangez le sucre et les œufs jusqu'à ce que le mélange blanchisse.</li>
+                                <li>Ajoutez le chocolat et le beurre fondus au mélange sucre-œufs, puis incorporez la farine et la pincée de sel.</li>
+                                <li>Versez la préparation dans un moule beurré et fariné.</li>
+                                <li>Enfournez pendant 25 à 30 minutes. Vérifiez la cuisson en plantant la pointe d'un couteau dans le gâteau, elle doit ressortir légèrement humide.</li>
+                                <li>Laissez refroidir avant de démouler et de déguster.</li>
+                            </ol>
+                        </div>
+                    </article>
+                    
+                    <!-- Boutons Modifier et Supprimer -->
+                    <div class="recipe-actions">
+                        <button type="button" class="btn-edit">Modifier</button>
+                        <button type="button" class="btn-delete">Supprimer</button>
+                    </div>
+                </div>
+
+                <div class="recipe">
+                    <h2>Encore Une Recette</h2> 
+                    
+                    <article>
+                        <img src="img/pexels-janetrangdoan-1099680.jpg" alt="Encore Une Recette">
+
+                        <div class="ingredients">
+                            <h3>Ingrédients :</h3> 
+                            <ul>
+                                <li><input type="checkbox"> <span>200g de chocolat noir</span></li>
+                                <li><input type="checkbox"> <span>150g de beurre</span></li>
+                                <li><input type="checkbox"> <span>150g de sucre</span></li>
+                                <li><input type="checkbox"> <span>50g de farine</span></li>
+                                <li><input type="checkbox"> <span>3 œufs</span></li>
+                                <li><input type="checkbox"> <span>1 pincée de sel</span></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="steps">
+                            <h3>Étapes :</h3> 
+                            <ol>
+                                <li>Préchauffez le four à 180°C (thermostat 6).</li>
+                                <li>Faites fondre le chocolat et le beurre au bain-marie.</li>
+                                <li>Dans un bol, mélangez le sucre et les œufs jusqu'à ce que le mélange blanchisse.</li>
+                                <li>Ajoutez le chocolat et le beurre fondus au mélange sucre-œufs, puis incorporez la farine et la pincée de sel.</li>
+                                <li>Versez la préparation dans un moule beurré et fariné.</li>
+                                <li>Enfournez pendant 25 à 30 minutes. Vérifiez la cuisson en plantant la pointe d'un couteau dans le gâteau, elle doit ressortir légèrement humide.</li>
+                                <li>Laissez refroidir avant de démouler et de déguster.</li>
+                            </ol>
+                        </div>
+                    </article>
+                    
+                    <!-- Boutons Modifier et Supprimer -->
+                    <div class="recipe-actions">
+                        <button type="button" class="btn-edit">Modifier</button>
+                        <button type="button" class="btn-delete">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 E-Sport Nutrition. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
