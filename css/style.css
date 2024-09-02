@@ -11,6 +11,7 @@
 }
 
 :root {
+    --blue: #007BFF;
     --backgrheader:#2563EB;
     --backgrfooter: #e5e7eb;
     --black:#000; 
@@ -95,7 +96,17 @@ header > div > nav > ul > li:nth-child(2) > a::before{
     color: var(--white);
 }
 
-header > div > nav > ul > li:nth-child(3) > a::before{
+header > div > nav > ul > li:nth-child(3) > a::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: "\f518";
+    position: absolute;
+    font-size: 22px;
+    top: 45px;
+    color: var(--white);
+}
+
+header > div > nav > ul > li:nth-child(4) > a::before{
     font-family: "Font Awesome 5 Free";
     font-weight: 700;
     content: "\f012";
@@ -131,22 +142,22 @@ header {
     font-size: 22px;
 }
 
-#section1 > div > div {
+#section1 > div > form{
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-#section1 > div > div > input {
+#section1 > div > form > input {
     width: 340px;
     height: 40px;
 }
 
-#section1 > div > div > button{
+#section1 > div > form > button{
     cursor: pointer;
     background: none;
 }
 
-#section1 > div > div > button::before {
+#section1 > div > form > button::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f002";
@@ -181,16 +192,19 @@ header {
     text-align: center;
 }
 
-#section3 h3 {
+#section3 h2 {
     font-size: 32px;
     margin: 40px 0px 10px 0px;
 }
 
-#section3 > div > button {
-    border: none;
-    background: none;
-    font-size: 16px;
-    cursor: pointer;
+#section3 > div > a{
+    color: var(--black);
+    font-size: 18px;
+}
+
+#section3 > div > a:hover{
+    color: var(--blue);
+    transition: all 0.3s;
 }
 
 /* Footer */

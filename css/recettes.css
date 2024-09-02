@@ -9,12 +9,14 @@
 }
 
 :root {
+    --blue: #007BFF;
     --backgrheader: #2563EB;
     --green: #28a745;
     --backgrfooter: #e5e7eb;
     --black: #000; 
     --white: #fff;
     --fontro: "Roboto";
+    --red: #dc3545;
 
 }
 
@@ -99,6 +101,16 @@ header > div > nav > ul > li:nth-child(2) > a::before {
 }
 
 header > div > nav > ul > li:nth-child(3) > a::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: "\f518";
+    position: absolute;
+    font-size: 22px;
+    top: 45px;
+    color: var(--white);
+}
+
+header > div > nav > ul > li:nth-child(4) > a::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 700;
     content: "\f012";
@@ -262,6 +274,12 @@ header {
 
 #section2 > div > div > article > div.steps {
     margin-bottom: 10px;
+}
+
+#section2 > div > div > article > div.ingredients > ul > li > i {
+    color: var(--red);
+    vertical-align: bottom;
+    margin-left: 5px;
 }
 
 /* Footer */

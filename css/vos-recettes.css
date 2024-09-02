@@ -1,9 +1,6 @@
 /* Fonts */
 
-
 /* Général */
-
-
 
 *{
     margin: 0;
@@ -13,13 +10,14 @@
 
 :root {
     --blue: #007BFF;
+    --backgrheader: #2563EB;
     --green: #28a745;
-    --backgrheader:#2563EB;
     --backgrfooter: #e5e7eb;
-    --black:#000; 
-    --white:#fff;
-    --gray: #ccc;
+    --black: #000; 
+    --white: #fff;
     --fontro: "Roboto";
+    --red: #dc3545;
+
 }
 
 
@@ -57,6 +55,9 @@ a {
     text-decoration: none;
 }
 
+ol {
+    padding: 0px 20px;
+}
 
 /* Header */
 
@@ -66,7 +67,7 @@ header > div {
     justify-content: space-between;
 }
 
-header > div > a > img{
+header > div > a > img {
     width: 130px;
 }
 
@@ -79,7 +80,7 @@ header > div > nav > ul > li > a {
     color: var(--white);
 }
 
-header > div > nav > ul > li:nth-child(1) > a::before{
+header > div > nav > ul > li:nth-child(1) > a::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 700;
     content: "\f007";
@@ -89,7 +90,7 @@ header > div > nav > ul > li:nth-child(1) > a::before{
     color: var(--white);
 }
 
-header > div > nav > ul > li:nth-child(2) > a::before{
+header > div > nav > ul > li:nth-child(2) > a::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f02d";
@@ -109,7 +110,7 @@ header > div > nav > ul > li:nth-child(3) > a::before {
     color: var(--white);
 }
 
-header > div > nav > ul > li:nth-child(4) > a::before{
+header > div > nav > ul > li:nth-child(4) > a::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 700;
     content: "\f012";
@@ -123,87 +124,56 @@ header {
     background-color: var(--backgrheader);
 }
 
-
 /* Section1 */
 
-
 #section1 {
+    margin: 80px 0px;
+}
+
+.create-recipe-container {
+    background-color: var(--backgrfooter);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#create-recipe-form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 199px 0px;
+    gap: 15px;
 }
 
-#section1 h1 {
-    margin-bottom: 20px;
+#create-recipe-form label {
+    font-weight: 600;
 }
 
-#section1 form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#section1 input {
+#create-recipe-form input,
+#create-recipe-form textarea {
     padding: 10px;
-    width: 300px;
-    max-width: 100%;
-    border: 1px solid var(--gray);
-    border-radius: 5px;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    font-size: 16px;
 }
 
-#section1 form button {
-    padding: 10px;
-    width: 320px;
-    max-width: 100%;
-    background-color: var(--blue);
-    color: var(--white);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#section1 form button:hover {
-    background-color: var(--green);
-    transition: all 0.3s;
-}
-
-#section1 > div > article > button {
-    padding: 10px;
-    width: 320px;
-    max-width: 100%;
+#create-recipe-form button {
+    padding: 10px 20px;
     background-color: var(--green);
     color: var(--white);
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    margin-top: 10px;
-}
-
-#section1 > div > article > button:hover{
-    background-color: var(--blue);
+    font-size: 16px;
     transition: all 0.3s;
 }
 
-#section1 > div > article:nth-child(2){
-    margin: 20px 0px;
-}
-
-#section1 > div > article:nth-child(1) > form > p > a{
-    color: var(--black);
-} 
-
-#section1 > div > article:nth-child(1) > form > p > a:hover{
-    color: var(--blue);
-    transition: all 0.3s;
+#create-recipe-form button:hover {
+    background-color: var(--backgrheader);
 }
 
 /* Footer */
 
 footer {
     background-color: var(--backgrfooter);
-    padding: 30px 0px;
+    padding: 31px 0px;
     text-align: center;
 }
+
