@@ -160,44 +160,6 @@ header {
     background-color: var(--green);
 }
 
-.create-recipe-container {
-    background-color: var(--backgrfooter);
-    padding: 20px;
-    border-radius: 8px;
-}
-
-#create-recipe-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-#create-recipe-form label {
-    font-weight: 600;
-}
-
-#create-recipe-form input,
-#create-recipe-form textarea {
-    padding: 10px;
-    border: 1px solid var(--black);
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-#create-recipe-form button {
-    padding: 10px 20px;
-    background-color: var(--green);
-    color: var(--white);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all 0.3s;
-}
-
-#create-recipe-form button:hover {
-    background-color: var(--backgrheader);
-}
 
 /* Section 2 */
 
@@ -241,40 +203,6 @@ header {
     margin-bottom: 20px;
 }
 
-.recipe-actions > button {
-    padding: 10px 20px;
-    margin-top: 15px;
-    color: var(--white);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all 0.3s;
-}
-
-.recipe-actions > button.btn-edit {
-    background-color: var(--backgrheader);
-}
-
-.recipe-actions > button.btn-edit:hover {
-    background-color: var(--green);
-}
-
-.recipe-actions > button.btn-delete {
-    background-color: var(--green);
-}
-
-.recipe-actions > button.btn-delete:hover {
-    background-color: var(--backgrheader);
-}
-
-#section2 > div > div > article > div.steps > h3{
-    margin-bottom: 10px;
-}
-
-#section2 > div > div > article > div.steps {
-    margin-bottom: 10px;
-}
 
 #section2 > div > div > article > div.ingredients > ul > li > i {
     color: var(--red);
